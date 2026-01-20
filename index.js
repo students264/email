@@ -28,7 +28,6 @@ app.get('/', (req, res) => {
 })
 
 app.get('/db', async (req, res) => {
-  const users = await User.find()
   res.render('db')
 })
 
