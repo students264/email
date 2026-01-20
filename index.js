@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 
 app.get('/db', async (req, res) => {
   const users = await User.find()
-  res.render('db', { users })
+  res.render('db')
 })
 
 app.post('/action', async (req, res) => {
